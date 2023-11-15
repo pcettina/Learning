@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/quit_menu_item"
+        app:showAsAction="always"
+        android:title="quit"
+        android:icon="@drawable/exit"/>
+
+    <item android:id="@+id/tip_calc_item"
+        app:showAsAction="always"
+        android:title="tip_calc"
+        android:icon="@drawable/tip_calc"
+        />
+
+    <item android:id="@+id/Vibration_menu_item"
+        app:showAsAction="always"
+        android:title="vibrate"
+        android:icon="@drawable/vibrate"
+        />
+    <item android:id="@+id/fibonaccireponse_menu_item"
+        app:showAsAction="ifRoom"
+        android:title="Fib unresponsive"
+        android:icon="@drawable/fibunresponsiveicon"/>
+
+    <item android:id="@+id/fibonaccibetter_menu_item"
+        app:showAsAction="ifRoom"
+        android:title="Fib Responsive"
+        android:icon="@drawable/fibresponsiveicon"/>
+
+    <item android:id="@+id/location_menu_item"
+        app:showAsAction="ifRoom"
+        android:title="Location Finder"
+        android:icon="@drawable/loc_icon"/>
+
+    <item android:id="@+id/CatFact_menu_item"
+        app:showAsAction="ifRoom"
+        android:title="CatFact"
+        android:icon="@drawable/cat_icon"/>
+
+
+
+</menu>

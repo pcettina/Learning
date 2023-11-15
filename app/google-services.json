@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "89539905814",
+    "project_id": "learningapp-login-demo-9bd80",
+    "storage_bucket": "learningapp-login-demo-9bd80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89539905814:android:814fc8ff4b3270e6512837",
+        "android_client_info": {
+          "package_name": "edu.fandm.pcettina.learning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK0MjguNwe5rDxFFpWDG9_hMmHnPqIbA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

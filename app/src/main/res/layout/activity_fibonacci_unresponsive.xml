@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FibonacciUnresponsive">
+
+    <TextView
+        android:id="@+id/fib_tv_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="The Fibonacci Number is: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fib_butt_calculate"/>
+
+    <TextView
+        android:id="@+id/fib_tv_working"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="working..."
+        android:textSize="18sp"
+        android:layout_margin="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fib_butt_calculate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/fib_butt_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fib_tv_ans"
+        app:layout_constraintVertical_bias="0.25"
+        android:text="Calculate"
+        android:onClick="recurFib"/>
+
+    <EditText
+        android:id="@+id/fib_et_n"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="N"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintRight_toLeftOf="@+id/fib_butt_calculate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fib_butt_calculate" />
+    <!-- This does nothing! It is used to demonstrate
+    that the phone goes unresponsive for a time while calculating -->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
